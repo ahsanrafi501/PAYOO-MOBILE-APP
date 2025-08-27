@@ -16,13 +16,15 @@
         }
     </style>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Home</title>
 </head>
 
 <body class="max-w-3xl m-auto ">
-    <div class="flex justify-between items-center pt-5 mx-2">
+    <div class="flex justify-between items-center pt-5 mx-2 border-b-2 border-gray-400 pb-4">
         <div class="flex items-center gap-1">
             <img class="size-12" src="./assets/Group.png" alt="">
             <div>
@@ -31,7 +33,8 @@
             </div>
         </div>
         <div>
-              <button class="btn"><i class="fa-solid fa-right-from-bracket rotate-180"></i><span class="text-[#08080880]">Log Out</span></button>
+            <button class="btn"><i class="fa-solid fa-right-from-bracket rotate-180"></i><span
+                    class="text-[#08080880]">Log Out</span></button>
         </div>
     </div>
 
@@ -66,12 +69,40 @@
             <img class="m-auto h-[34px] w-[34px]" src="./assets/transaction1.png" alt="">
             <h2 class="text-[#08080880]">Transaction</h2>
         </div>
-       
     </div>
 
+    <div class="mx-2 mt-8">
+         <h1 class="text-2xl font-bold mb-[15px]">Add Money</h1>
+        <form action="" class="bg-red-50 p-5 w-full rounded-xl">
+            <div class="mt-1">
+                <label for="SelectBank" class="text-lg font-semibold">Select A Bank</label> <br>
+                <select class="select input bg-[#F4F5F7] mt-3 rounded-3xl w-full">
+                    <option disabled>Select A Bank</option>
+                    <option>Brac Bank</option>
+                    <option>AB Bank</option>
+                    <option>IFIC Bank</option>
+                </select>
+            </div>
 
-    <div>
-        
+            <div class="mt-4">
+                <label for="" class="text-lg font-semibold">Bank Account Number</label> <br>
+                <input type="text" placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full"
+                    />
+            </div>
+
+            <div class="mt-4">
+                <label for="" class="text-lg font-semibold">Amount to Add</label> <br>
+                <input type="text" placeholder="Add Amount to withdraw" class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full"
+                 />
+            </div>
+
+            <div class="my-4"> 
+                <label for="" class="text-lg font-semibold">Pin Number</label> <br>
+                <input type="text" placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] mt-3 rounded-3xl w-full"/>
+            </div>
+            <button class="btn font-semibold text-lg bg-[#0874F2] w-full rounded-3xl text-white" id="login-btn">Log In</button>
+        </form>
+
     </div>
 </body>
 
